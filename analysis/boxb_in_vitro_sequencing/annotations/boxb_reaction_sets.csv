@@ -1,0 +1,11 @@
+reaction_set,scale_group,sample_id,tada_type,tada_conc,condition,enzyme_label,panel_order,logo_axis_min,logo_magnification,panel_title
+250nM,lambdaN_tada,i79_p3,lambdaN,250nM,37_2hr,TadA–λN,0,,,
+250nM,lambdaN_tada,i79_p8,tada_only,250nM,37_2hr,TadA8.20,1,-55.0,,
+125nM,lambdaN_tada,i79_p4,lambdaN,125nM,37_2hr,TadA–λN,0,,,
+125nM,lambdaN_tada,i79_p9,tada_only,125nM,37_2hr,TadA8.20,1,-55.0,,
+500nM,lambdaN_tada,i79_p2,lambdaN,500nM,37_2hr,TadA–λN,0,,,
+500nM,lambdaN_tada,i79_p7,tada_only,500nM,37_2hr,TadA8.20,1,-55.0,,
+editors,editors,i79_p20,gfpnb,250nM,37_2hr,TadA-GFPNb,1,,,
+editors,editors,i79_p13,pAG,125nM,37_2hr,pAG–TadA,0,,,
+time,time,i79_p6,lambdaN,250nM,37_30min,TadA–λN,0,,,30 min
+time,time,i79_p5,lambdaN,250nM,37_1hr,TadA–λN,1,,,1 h

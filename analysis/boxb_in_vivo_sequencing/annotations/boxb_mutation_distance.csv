@@ -1,0 +1,4 @@
+# Direct editing percentages: pool constructs within each site, then average sites equally.
+# Select designed sequences only; position zero shows distinct WT constructs as in the in vitro violin.
+source,comparison_set,sample_id,sites,label
+mutation_distance_original_mean_A8_A2,original,i79_p21,A8;A2,Mean A8/A2 editing (%)

@@ -1,0 +1,3 @@
+dataset,sample_id,sample_label,role,library,boxb_genotype,reporter_template,linkage_template,parent_plasmid,induction_hours,instrument,run_number,flowcell,lane,sample_index,linkage_dataset,use_for_figures
+original,i84p1,Original λN DMS,rna,ln_dms,wt,pAS517,NA,pAS499,72,M08474,113,000000000-LV3TV,1,ATCAGT,rb_ln_dms_linkage_mt_1LH1B_gdna,yes
+original,rb_ln_dms_linkage_mt_1LH1B_gdna,Original λN DMS linkage,linkage,ln_dms,wt,NA,unrecorded,pAS499,NA,M04866,739,000000000-DR6HN,1,CGTGAT,NA,no

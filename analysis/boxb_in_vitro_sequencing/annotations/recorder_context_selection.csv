@@ -1,0 +1,9 @@
+sample_id,tada_type,tada_conc,condition,target_pos_to_boxb,target_dist,variable_type,variable_subpos,position_id,insert_fiveprime_index,insert_threeprime_index,enzyme_label,panel_order,point_color,position_order,marker
+i79_p3,lambdaN,250nM,37_2hr,5,10,target,5,A2,5,4,TadA–λN,0,#AA4499,0,o
+i79_p3,lambdaN,250nM,37_2hr,5,10,target,5,A8,2,1,TadA–λN,0,#AA4499,1,s
+i79_p3,lambdaN,250nM,37_2hr,5,10,target,3,A10,5,4,TadA–λN,0,#AA4499,2,^
+i79_p3,lambdaN,250nM,37_2hr,5,10,target,3,A13,3,2,TadA–λN,0,#AA4499,3,D
+i79_p8,tada_only,250nM,37_2hr,5,10,target,5,A2,5,4,TadA8.20,1,#117733,0,o
+i79_p8,tada_only,250nM,37_2hr,5,10,target,5,A8,2,1,TadA8.20,1,#117733,1,s
+i79_p8,tada_only,250nM,37_2hr,5,10,target,3,A10,5,4,TadA8.20,1,#117733,2,^
+i79_p8,tada_only,250nM,37_2hr,5,10,target,3,A13,3,2,TadA8.20,1,#117733,3,D

@@ -1,0 +1,19 @@
+panel_row,enzyme,tada_concentration,incubation,condition_variable,condition_level,condition_label,recorder_site,recorder_context,measurement,construct_class,n_constructs,total_edited_umis,total_callable_umis,mean_percent_edited,sem_percent_edited
+Concentration,pAG–TadA,125nM,37_2hr,tada_conc,125nM,125 nM,A8,UAC,molecules edited at the recorder site,stem mutant,32,150,20441,0.7893513704242474,0.10003717900886093
+Concentration,pAG–TadA,125nM,37_2hr,tada_conc,125nM,125 nM,A8,UAC,molecules edited at the recorder site,wild type,22,2027,18996,9.593997983556243,0.8354098540610202
+Concentration,pAG–TadA,250nM,37_2hr,tada_conc,250nM,250 nM,A8,UAC,molecules edited at the recorder site,stem mutant,32,1225,11449,10.727212452936778,1.070516382726286
+Concentration,pAG–TadA,250nM,37_2hr,tada_conc,250nM,250 nM,A8,UAC,molecules edited at the recorder site,wild type,22,2997,8935,32.186054960018154,1.8937499191720684
+Concentration,pAG–TadA,500nM,37_2hr,tada_conc,500nM,500 nM,A8,UAC,molecules edited at the recorder site,stem mutant,32,13849,43410,30.961080130363257,2.076242351424869
+Concentration,pAG–TadA,500nM,37_2hr,tada_conc,500nM,500 nM,A8,UAC,molecules edited at the recorder site,wild type,22,13257,27559,47.271996245974925,2.1883294335834207
+Temperature,pAG–TadA,250nM,13_2hr,condition,13_2hr,13 °C,A8,UAC,molecules edited at the recorder site,stem mutant,32,45,17736,0.2581314385886394,0.050111276816794434
+Temperature,pAG–TadA,250nM,13_2hr,condition,13_2hr,13 °C,A8,UAC,molecules edited at the recorder site,wild type,22,447,15131,3.0230090428777663,0.39557193482799063
+Temperature,pAG–TadA,250nM,25_2hr,condition,25_2hr,25 °C,A8,UAC,molecules edited at the recorder site,stem mutant,32,92,15235,0.655846985370125,0.1066864512777427
+Temperature,pAG–TadA,250nM,25_2hr,condition,25_2hr,25 °C,A8,UAC,molecules edited at the recorder site,wild type,22,1263,13489,8.912499714010808,1.1243693920692859
+Temperature,pAG–TadA,250nM,37_2hr,condition,37_2hr,37 °C,A8,UAC,molecules edited at the recorder site,stem mutant,32,1225,11449,10.727212452936778,1.070516382726286
+Temperature,pAG–TadA,250nM,37_2hr,condition,37_2hr,37 °C,A8,UAC,molecules edited at the recorder site,wild type,22,2997,8935,32.186054960018154,1.8937499191720684
+Time,pAG–TadA,250nM,37_1hr,condition,37_1hr,1 h,A8,UAC,molecules edited at the recorder site,stem mutant,32,1170,19468,6.264366040727689,0.6885108081820699
+Time,pAG–TadA,250nM,37_1hr,condition,37_1hr,1 h,A8,UAC,molecules edited at the recorder site,wild type,22,3899,16766,21.27012359418688,1.604684386753328
+Time,pAG–TadA,250nM,37_2hr,condition,37_2hr,2 h,A8,UAC,molecules edited at the recorder site,stem mutant,32,1225,11449,10.727212452936778,1.070516382726286
+Time,pAG–TadA,250nM,37_2hr,condition,37_2hr,2 h,A8,UAC,molecules edited at the recorder site,wild type,22,2997,8935,32.186054960018154,1.8937499191720684
+Time,pAG–TadA,250nM,37_30min,condition,37_30min,30 min,A8,UAC,molecules edited at the recorder site,stem mutant,32,365,17530,2.1793280504896444,0.24321691291866715
+Time,pAG–TadA,250nM,37_30min,condition,37_30min,30 min,A8,UAC,molecules edited at the recorder site,wild type,22,1879,15098,11.418541277996672,0.8391368402330573

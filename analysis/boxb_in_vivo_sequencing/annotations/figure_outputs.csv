@@ -1,0 +1,13 @@
+# Every figure this analysis writes, registered under its PDF filename. Each figure is also written
+# as a 96-DPI PNG of the same stem. `source` is the name the drawing script passes to save_figure,
+# and no source or filename may repeat. `comparison_set` names the libraries a figure draws, and
+# `position_id` the recorder site a family measures at.
+analysis,source,comparison_set,position_id,filename
+plot_recorder_edit_counts,edit_counts_original,original,,recorder_edit_counts_editors_original.pdf
+plot_recorder_edit_counts,edit_counts_editor_vs_no_editor_original,original,,recorder_edit_counts_tada_lambdaN_vs_no_editor_original.pdf
+plot_recorder_site_placement,site_placement_original,original,,recorder_sites_and_placements_tada_lambdaN_original.pdf
+plot_boxb_effect_heatmaps,single_mutant_heatmap_original_mean_A8_A2,original,A8_A2_mean,boxb_single_mutant_heatmap_mean_A8_A2_original.pdf
+plot_boxb_site_correlation,all_variant_sites_original,original,A8_A2,boxb_all_variant_A8_vs_A2_original.pdf
+plot_boxb_mutation_distance,mutation_distance_original_mean_A8_A2,original,A8_A2_mean,boxb_mutation_distance_mean_A8_A2_original.pdf
+plot_boxb_read_coverage,read_coverage_original,original,,boxb_read_coverage_tada_lambdaN_original.pdf
+plot_in_vitro_comparison,in_vitro_comparison_original_mean_A8_A2,original,A8_A2_mean,boxb_in_vitro_vs_in_vivo_mean_A8_A2.pdf

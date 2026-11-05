@@ -1,0 +1,5 @@
+# The FASTQ each library is counted from. Only R1 is listed, which is the stream deposited in SRA
+# (data/sra_accessions.csv).
+dataset,sample_id,read,path
+original,i84p1,R1,analysis/ln_dms_sequencing/data/fastq/rb_i84p1_ln_dms_S1_R1_001.fastq.gz
+original,rb_ln_dms_linkage_mt_1LH1B_gdna,R1,analysis/ln_dms_sequencing/data/linkage/fastq/rb_ln_dms_linkage_mt_1LH1B_gdna_S1_R1_001.fastq

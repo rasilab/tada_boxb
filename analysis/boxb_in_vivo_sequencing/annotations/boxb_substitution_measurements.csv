@@ -1,0 +1,7 @@
+# The recorder measurements the substitution figures report. `sites` names one position for a
+# marginal measurement and several for a joint one, which the counter tabulates directly.
+# `comparison_sets` scopes a measurement to the comparisons that draw it.
+position_id,sites,label,include_logo,comparison_sets
+A8,A8,A8,TRUE,original
+A2,A2,A2,TRUE,original
+A8_A2,A8;A2,both A8 and A2,FALSE,original

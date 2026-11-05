@@ -1,0 +1,3 @@
+source,panel_order,y_sample_id,x_sample_id,measurement
+boxb_direct_vs_split_recruitment_mean_A8_A2,0,i79_p3,i79_p10,mean_A8_A2
+boxb_direct_vs_split_recruitment_mean_A8_A2,1,i79_p3,i79_p20,mean_A8_A2

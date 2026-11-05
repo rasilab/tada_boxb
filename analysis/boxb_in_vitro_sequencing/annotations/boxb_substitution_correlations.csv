@@ -1,0 +1,3 @@
+source,x_position_id,y_position_id,reaction_sets,variant_set,stacked_sets
+boxb_single_mutant_site_correlation,A8,A2,time,single,
+boxb_all_variant_site_correlation,A8,A2,250nM;125nM;500nM;editors;time,designed,125nM;500nM

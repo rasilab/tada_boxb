@@ -1,0 +1,13 @@
+enzyme,tada_concentration,incubation,condition_variable,condition_level,condition_label,recorder_site,recorder_context,measurement,construct_class,n_constructs,total_edited_umis,total_callable_umis,mean_percent_edited,sem_percent_edited
+TadA–λN,250nM,37_1hr,condition,37_1hr,1 h,,,molecules with exactly 1 edit,stem mutant,32,1290,25258,5.110839682828063,0.27430046799430957
+TadA–λN,250nM,37_1hr,condition,37_1hr,1 h,,,molecules with exactly 1 edit,wild type,22,3489,23513,15.069135963103081,1.1087845308253617
+TadA–λN,250nM,37_1hr,condition,37_1hr,1 h,,,molecules with 2 or more edits,stem mutant,32,264,25258,1.0947308391312998,0.09542416604468378
+TadA–λN,250nM,37_1hr,condition,37_1hr,1 h,,,molecules with 2 or more edits,wild type,22,1717,23513,6.829534734948919,0.70426721753437
+TadA–λN,250nM,37_2hr,condition,37_2hr,2 h,,,molecules with exactly 1 edit,stem mutant,32,1596,22651,7.1141206284271385,0.4379514180407639
+TadA–λN,250nM,37_2hr,condition,37_2hr,2 h,,,molecules with exactly 1 edit,wild type,22,3453,22928,15.919387937617834,1.0724185379187694
+TadA–λN,250nM,37_2hr,condition,37_2hr,2 h,,,molecules with 2 or more edits,stem mutant,32,425,22651,2.0122875933255466,0.21917953572086762
+TadA–λN,250nM,37_2hr,condition,37_2hr,2 h,,,molecules with 2 or more edits,wild type,22,2477,22928,10.726457096345513,1.0284177966191925
+TadA–λN,250nM,37_30min,condition,37_30min,30 min,,,molecules with exactly 1 edit,stem mutant,32,1621,44337,3.688739376480732,0.20605956462141384
+TadA–λN,250nM,37_30min,condition,37_30min,30 min,,,molecules with exactly 1 edit,wild type,22,4862,41546,11.793375513150663,0.8388858301080816
+TadA–λN,250nM,37_30min,condition,37_30min,30 min,,,molecules with 2 or more edits,stem mutant,32,233,44337,0.5481749950332414,0.052298750552856585
+TadA–λN,250nM,37_30min,condition,37_30min,30 min,,,molecules with 2 or more edits,wild type,22,1571,41546,3.659863647679141,0.3332288026136776

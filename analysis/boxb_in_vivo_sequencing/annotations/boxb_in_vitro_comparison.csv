@@ -1,0 +1,11 @@
+# Per-variant agreement between the purified-enzyme reaction and the cellular library.
+# Both axes carry one quantity built one way: each designed boxB sequence's editing as a percentage
+# of its matched wild type, taken as the geometric mean of the named marginal sites. Normalising to
+# matched wild type removes the activity difference between a two-hour reaction and a cellular
+# library and leaves the sequence determinants, which is what the two experiments are compared on.
+# `variant_sets` names the panels a figure draws, in order: `designed` every designed sequence
+# pooled, `single` the 57 single substitutions, and `stem` and `loop` the mutants whose randomized
+# window does not and does overlap the loop. Panels share one pair of axes and one marker, so their
+# correlations are read against each other rather than each against its own scale.
+source,comparison_set,sample_id,sites,in_vitro_reaction_set,in_vitro_sample_id,in_vitro_measurement,variant_sets,x_label,y_label,source_data_panel
+in_vitro_comparison_original_mean_A8_A2,original,i79_p21,A8;A2,250nM,i79_p3,mean_A8_A2,designed;single;stem;loop,In vitro editing\n(% of wild type),In cells editing\n(% of wild type),figure_s8b

@@ -1,0 +1,4 @@
+# Pool edited and callable counts at each site, then average the site editing percentages equally.
+# Values are direct editing percentages, without WT normalization.
+source,comparison_set,sample_id,sites,label
+single_mutant_heatmap_original_mean_A8_A2,original,i79_p21,A8;A2,Mean A8/A2 editing (%)

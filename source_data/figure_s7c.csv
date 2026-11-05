@@ -1,0 +1,9 @@
+enzyme,tada_concentration,incubation,condition_variable,condition_level,condition_label,recorder_site,recorder_context,measurement,construct_class,n_constructs,total_edited_umis,total_callable_umis,mean_percent_edited,sem_percent_edited
+TadA-GFPNb,250nM,37_2hr,tada_type,gfpnb,TadA-GFPNb,A8,UAC,molecules edited at the recorder site,stem mutant,32,726,15619,4.932472138849136,0.438943175577643
+TadA-GFPNb,250nM,37_2hr,tada_type,gfpnb,TadA-GFPNb,A8,UAC,molecules edited at the recorder site,wild type,22,3271,12805,24.023228973966972,1.7729838005485363
+TadA–λN,250nM,37_2hr,tada_type,lambdaN,TadA–λN,A8,UAC,molecules edited at the recorder site,stem mutant,32,658,24336,2.8196371821576265,0.22773395460933082
+TadA–λN,250nM,37_2hr,tada_type,lambdaN,TadA–λN,A8,UAC,molecules edited at the recorder site,wild type,22,2831,26079,10.69949675555172,0.880421326103506
+pAG–TadA,250nM,37_2hr,tada_type,pAG,pAG–TadA,A8,UAC,molecules edited at the recorder site,stem mutant,32,1225,11449,10.727212452936778,1.070516382726286
+pAG–TadA,250nM,37_2hr,tada_type,pAG,pAG–TadA,A8,UAC,molecules edited at the recorder site,wild type,22,2997,8935,32.186054960018154,1.8937499191720684
+TadA,250nM,37_2hr,tada_type,tada_only,TadA,A8,UAC,molecules edited at the recorder site,stem mutant,32,4187,20722,20.239961778149095,1.4774160686689064
+TadA,250nM,37_2hr,tada_type,tada_only,TadA,A8,UAC,molecules edited at the recorder site,wild type,22,3428,16834,19.388606931028114,1.5089416914117029

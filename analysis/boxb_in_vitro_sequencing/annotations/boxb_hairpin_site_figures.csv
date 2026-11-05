@@ -1,0 +1,8 @@
+figure,enzyme,sample_id,tada_type,tada_conc,condition,panel_label,panel_row,panel_column
+boxb_hairpin_site_editing_enzyme_concentration,none,i79_p1,none,0nM,37_2hr,No enzyme,0,0
+boxb_hairpin_site_editing_enzyme_concentration,lambdaN,i79_p4,lambdaN,125nM,37_2hr,125 nM,1,0
+boxb_hairpin_site_editing_enzyme_concentration,tada_only,i79_p9,tada_only,125nM,37_2hr,125 nM,1,1
+boxb_hairpin_site_editing_enzyme_concentration,lambdaN,i79_p3,lambdaN,250nM,37_2hr,250 nM,2,0
+boxb_hairpin_site_editing_enzyme_concentration,tada_only,i79_p8,tada_only,250nM,37_2hr,250 nM,2,1
+boxb_hairpin_site_editing_enzyme_concentration,lambdaN,i79_p2,lambdaN,500nM,37_2hr,500 nM,3,0
+boxb_hairpin_site_editing_enzyme_concentration,tada_only,i79_p7,tada_only,500nM,37_2hr,500 nM,3,1

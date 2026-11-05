@@ -1,0 +1,5 @@
+enzyme,enzyme_order,edit_class,class_order,boxb_present_sample,boxb_absent_sample,present_edited,present_other,absent_edited,absent_other,fold_change_present_over_absent,p_value,test,alternative,significance
+TadA–λN,0,≥1,0,"TadA–λN, +boxB","TadA–λN, no boxB",239,32,171,254,2.191903497982348,3.7257831904592165e-39,Fisher exact,two-sided,***
+TadA–λN,0,≥2,1,"TadA–λN, +boxB","TadA–λN, no boxB",115,156,48,377,3.7573031980319804,7.417197378769495e-21,Fisher exact,two-sided,***
+TadA,1,≥1,0,"TadA, +boxB","TadA, no boxB",148,141,240,170,0.8748558246828143,0.06357903605340352,Fisher exact,two-sided,ns
+TadA,1,≥2,1,"TadA, +boxB","TadA, no boxB",45,244,93,317,0.6864605424712579,0.02073680275192536,Fisher exact,two-sided,*

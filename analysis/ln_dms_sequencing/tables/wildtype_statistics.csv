@@ -1,0 +1,85 @@
+statistic,site,threshold,value,unit,n,detail
+wild_type_pooled_rate,A2,,11.9548,percent,431,32159 edited of 269004 callable
+wild_type_intraclass_correlation,A2,,0.0961278,correlation,431,every covered wild-type barcode
+wild_type_pooled_rate,A15,,9.54664,percent,431,25623 edited of 268398 callable
+wild_type_intraclass_correlation,A15,,0.105301,correlation,431,every covered wild-type barcode
+wild_type_pearson_dispersion,A2,>= 50 callable reads,123.272,ratio,416,at the pooled wild-type rate of this site
+binomial_error_understatement,A2,>= 50 callable reads,11.1028,fold,416,square root of the Pearson dispersion
+wild_type_median_barcode_rate,A2,>= 50 callable reads,0.245996,percent,416,median of the per-barcode rates
+wild_type_pearson_dispersion,A15,>= 50 callable reads,135.68,ratio,416,at the pooled wild-type rate of this site
+binomial_error_understatement,A15,>= 50 callable reads,11.6482,fold,416,square root of the Pearson dispersion
+wild_type_median_barcode_rate,A15,>= 50 callable reads,0,percent,416,median of the per-barcode rates
+wild_type_share_below_1_percent_below_200_reads,both,>= 50 callable reads at both sites,88.75,percent,80,"71 of 80 barcodes, sites summed"
+wild_type_share_below_1_percent_above_1000_reads,both,>= 50 callable reads at both sites,10.9756,percent,82,"9 of 82 barcodes, sites summed"
+calibration_barcode_test_rejection,A2,nominal 0.05,4.75,percent,400,"19 of 400 draws, seed 20261029, pseudo-variant sizes 1-133 barcodes, reference held out"
+calibration_read_test_rejection,A2,nominal 0.05,88,percent,400,"352 of 400 draws, seed 20261029, pseudo-variant sizes 1-133 barcodes, reference held out"
+calibration_barcode_test_rejection,A15,nominal 0.05,5.25,percent,400,"21 of 400 draws, seed 20261029, pseudo-variant sizes 1-133 barcodes, reference held out"
+calibration_read_test_rejection,A15,nominal 0.05,87.5,percent,400,"350 of 400 draws, seed 20261029, pseudo-variant sizes 1-133 barcodes, reference held out"
+variant_site_comparisons,both,,870,comparisons,870,2 sites x the amino-acid variants covered at each
+barcode_test_significant,both,q < 0.05,19,comparisons,870,the test the figures mark
+read_test_significant,both,q < 0.05,799,comparisons,870,"Fisher on pooled reads, off the figures"
+barcode_test_significant_both_sites,both,q < 0.05,5,variants,870,variants reaching it at both sites
+missense_median_callable_reads,A2,,5547,reads,413,covered missense amino-acid groups
+missense_fifth_percentile_callable_reads,A2,,701.6,reads,413,5th percentile over the same groups
+missense_zero_groups,A2,,29,groups,413,groups reading exactly 0% at this site
+missense_zero_group_median_callable_reads,A2,,686,reads,29,callable reads those zero groups carry
+missense_expected_zero_groups,A2,,0.0342016,groups,413,expected under the pooled wild-type rate
+missense_median_callable_reads,A15,,5526,reads,413,covered missense amino-acid groups
+missense_fifth_percentile_callable_reads,A15,,698,reads,413,5th percentile over the same groups
+missense_zero_groups,A15,,38,groups,413,groups reading exactly 0% at this site
+missense_zero_group_median_callable_reads,A15,,1032,reads,38,callable reads those zero groups carry
+missense_expected_zero_groups,A15,,0.0805471,groups,413,expected under the pooled wild-type rate
+missense_mean_rate_at_variant_read_floor,A2,>= 1 callable reads,9.22233,percent,413,equal weight over the covered missense groups retained
+missense_mean_rate_at_variant_read_floor,A2,>= 100 callable reads,9.28981,percent,410,equal weight over the covered missense groups retained
+missense_mean_rate_at_variant_read_floor,A2,>= 200 callable reads,9.22865,percent,404,equal weight over the covered missense groups retained
+missense_mean_rate_at_variant_read_floor,A2,>= 500 callable reads,9.34352,percent,399,equal weight over the covered missense groups retained
+missense_mean_rate_largest_shift,A2,"floors 1, 100, 200, 500",0.121188,percentage points,4,largest gap across the read floors above
+missense_mean_rate_at_variant_read_floor,A15,>= 1 callable reads,7.83069,percent,413,equal weight over the covered missense groups retained
+missense_mean_rate_at_variant_read_floor,A15,>= 100 callable reads,7.64409,percent,410,equal weight over the covered missense groups retained
+missense_mean_rate_at_variant_read_floor,A15,>= 200 callable reads,7.6221,percent,404,equal weight over the covered missense groups retained
+missense_mean_rate_at_variant_read_floor,A15,>= 500 callable reads,7.60347,percent,399,equal weight over the covered missense groups retained
+missense_mean_rate_largest_shift,A15,"floors 1, 100, 200, 500",0.227224,percentage points,4,largest gap across the read floors above
+missense_arginine_position_mean,A2,>= 1 reads per barcode,6.08155,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A2,>= 1 reads per barcode,10.1551,percent,17,equal weight over the remaining positions
+missense_arginine_position_mean,A15,>= 1 reads per barcode,4.55286,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A15,>= 1 reads per barcode,8.82492,percent,17,equal weight over the remaining positions
+missense_arginine_position_mean,A2,>= 50 reads per barcode,6.07174,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A2,>= 50 reads per barcode,10.2091,percent,17,equal weight over the remaining positions
+missense_arginine_position_mean,A15,>= 50 reads per barcode,4.55612,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A15,>= 50 reads per barcode,8.53357,percent,17,equal weight over the remaining positions
+missense_arginine_position_mean,A2,>= 100 reads per barcode,6.09727,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A2,>= 100 reads per barcode,10.0667,percent,17,equal weight over the remaining positions
+missense_arginine_position_mean,A15,>= 100 reads per barcode,4.57379,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A15,>= 100 reads per barcode,8.40181,percent,17,equal weight over the remaining positions
+missense_arginine_position_mean,A2,>= 200 reads per barcode,6.10001,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A2,>= 200 reads per barcode,10.3408,percent,17,equal weight over the remaining positions
+missense_arginine_position_mean,A15,>= 200 reads per barcode,4.59424,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A15,>= 200 reads per barcode,8.61038,percent,17,equal weight over the remaining positions
+missense_arginine_position_mean,A2,>= 500 reads per barcode,6.10592,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A2,>= 500 reads per barcode,10.8874,percent,17,equal weight over the remaining positions
+missense_arginine_position_mean,A15,>= 500 reads per barcode,4.50291,percent,5,equal weight over the arginine positions
+missense_other_position_mean,A15,>= 500 reads per barcode,8.94985,percent,17,equal weight over the remaining positions
+missense_codon_variants_retained,both,>= 1 barcodes,981,variants,1126,"positive mean editing, of 1126 covered at both sites"
+missense_codon_interquartile_spread,both,>= 1 barcodes,2.98076,fold,981,75th over 25th percentile of mean A2/A15 editing
+missense_codon_share_below_1_percent,both,>= 1 barcodes,5.91233,percent,981,58 of 981 variants
+missense_codon_median_rate,both,>= 1 barcodes,7.4267,percent,981,median mean A2/A15 editing
+synonymous_codon_variants_retained,both,>= 1 barcodes,44,variants,49,"positive mean editing, of 49 covered at both sites"
+synonymous_codon_interquartile_spread,both,>= 1 barcodes,1.80209,fold,44,75th over 25th percentile of mean A2/A15 editing
+synonymous_codon_share_below_1_percent,both,>= 1 barcodes,0,percent,44,0 of 44 variants
+synonymous_codon_median_rate,both,>= 1 barcodes,9.57867,percent,44,median mean A2/A15 editing
+missense_codon_variants_retained,both,>= 3 barcodes,643,variants,657,"positive mean editing, of 657 covered at both sites"
+missense_codon_interquartile_spread,both,>= 3 barcodes,2.7517,fold,643,75th over 25th percentile of mean A2/A15 editing
+missense_codon_share_below_1_percent,both,>= 3 barcodes,5.13219,percent,643,33 of 643 variants
+missense_codon_median_rate,both,>= 3 barcodes,6.70152,percent,643,median mean A2/A15 editing
+synonymous_codon_variants_retained,both,>= 3 barcodes,38,variants,38,"positive mean editing, of 38 covered at both sites"
+synonymous_codon_interquartile_spread,both,>= 3 barcodes,1.56898,fold,38,75th over 25th percentile of mean A2/A15 editing
+synonymous_codon_share_below_1_percent,both,>= 3 barcodes,0,percent,38,0 of 38 variants
+synonymous_codon_median_rate,both,>= 3 barcodes,10.1372,percent,38,median mean A2/A15 editing
+missense_codon_variants_retained,both,>= 5 barcodes,354,variants,356,"positive mean editing, of 356 covered at both sites"
+missense_codon_interquartile_spread,both,>= 5 barcodes,2.281,fold,354,75th over 25th percentile of mean A2/A15 editing
+missense_codon_share_below_1_percent,both,>= 5 barcodes,3.10734,percent,354,11 of 354 variants
+missense_codon_median_rate,both,>= 5 barcodes,5.50331,percent,354,median mean A2/A15 editing
+synonymous_codon_variants_retained,both,>= 5 barcodes,22,variants,22,"positive mean editing, of 22 covered at both sites"
+synonymous_codon_interquartile_spread,both,>= 5 barcodes,1.43662,fold,22,75th over 25th percentile of mean A2/A15 editing
+synonymous_codon_share_below_1_percent,both,>= 5 barcodes,0,percent,22,0 of 22 variants
+synonymous_codon_median_rate,both,>= 5 barcodes,9.57867,percent,22,median mean A2/A15 editing

@@ -1,0 +1,7 @@
+# The four samples Figure 1C draws. `Sample` joins to the read-count CSV in source_data/;
+# `sample_label` is the name used in the exported panel data and the statistics table.
+Sample,sample_label,enzyme,enzyme_order,reporter,reporter_order,plot_order,boxb_label,control
+boxb_TadA-lambdaN 250 uM total RNA,"TadA–λN, +boxB",TadA–λN,0,+boxB,1,0,+,False
+TadA-lambdaN 250 uM total RNA,"TadA–λN, no boxB",TadA–λN,0,No boxB,0,1,−,True
+boxb_TadA 250 uM total RNA,"TadA, +boxB",TadA,1,+boxB,1,0,+,False
+TadA 250 uM total RNA,"TadA, no boxB",TadA,1,No boxB,0,1,−,True

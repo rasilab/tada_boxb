@@ -1,0 +1,39 @@
+name: Clarification
+description: Any other question about this paper
+title: "<Example: Why the A8 and A2 recorder sites were chosen>"
+labels: ["question"]
+assignees:
+  - rasi
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Please let us know if you would like us to clarify anything in the paper, and we will be
+        happy to answer. No programming knowledge is needed to ask.
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+    validations:
+      required: true
+  - type: input
+    id: institution
+    attributes:
+      label: Institution
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we reach you if we need more information?
+      placeholder: email address, or a link to your contact page
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question or comment
+      description: What would you like us to clarify?
+    validations:
+      required: true

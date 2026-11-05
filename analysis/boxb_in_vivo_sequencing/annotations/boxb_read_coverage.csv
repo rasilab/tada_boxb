@@ -1,0 +1,4 @@
+# Coverage of the same library and standard recorder background as the editing figures.
+# Pool reads over all four placements and every window encoding a given full boxB sequence.
+source,comparison_set,sample_id,g_depleted
+read_coverage_original,original,i79_p21,no

@@ -1,0 +1,9 @@
+Sample,Total sequences,sequences with indels,sequences without indels,sequences with substiutions,sequences with ag substitution,Multiple substitution (A->G),%mRNA (no indels) edited (nonspecific),percent_mRNA_edited_A_G,percent_mRNA_multiple_edited_A_G
+boxb_TadA-lambdaN 250 uM total RNA,361,90,271,248,239,115,91.51291513,88.19188192,42.43542435
+TadA-lambdaN 250 uM total RNA,578,153,425,235,171,48,55.29411765,40.23529412,11.29411765
+120mins_250nM,390,122,268,140,86,24,52.23880597,32.08955224,6.153846154
+boxB120mins_250nM,286,103,183,157,136,59,85.79234973,74.31693989,20.62937063
+boxb_TadA-lambdaN,785,217,568,468,416,192,82.3943662,73.23943662,33.8028169
+TadA-lambdaN,1331,370,961,531,299,73,55.25494277,31.11342352,7.596253902
+boxb_TadA 250 uM total RNA,367,78,289,182,148,45,62.97577855,51.21107266,15.57093426
+TadA 250 uM total RNA,558,148,410,276,240,93,67.31707317,58.53658537,22.68292683

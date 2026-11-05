@@ -1,0 +1,4 @@
+region,label,start,end,rna_sequence
+stem_5prime,5′ stem,1,7,GGGCCCU
+loop,Loop,8,12,GAAGA
+stem_3prime,3′ stem,13,19,AGGGCCC

@@ -1,0 +1,11 @@
+comparison,output_name,position_id,dna_context,layout,site_width,site_height,shared_y,pair_offset,pair_spacing,group_spacing,bar_width,pair_label_size,star_offset,hide_annotations,variant_row_label,figure_group,row_label,png_companion
+recorder_pag_concentration,recorder_pag_concentration_tag,A2,TAG,shared_axis,2.9,.60,FALSE,.28,.26,1.3,.13,7,1,none,boxB,recorder_pag_conditions_tag,Concentration,TRUE
+recorder_pag_temperature,recorder_pag_temperature_tag,A2,TAG,shared_axis,2.9,.60,FALSE,.28,.26,1.3,.13,7,1,none,boxB,recorder_pag_conditions_tag,Temperature,TRUE
+recorder_pag_time,recorder_pag_time_tag,A2,TAG,shared_axis,2.9,.60,FALSE,.28,.26,1.3,.13,7,1,none,boxB,recorder_pag_conditions_tag,Time,TRUE
+recorder_variants_250nM,recorder_pag_gfpnb_250nM_tag,A2,TAG,shared_axis,3.7,1.45,FALSE,.28,.22,1.3,.10,7,1,none,boxB,recorder_pag_gfpnb_250nM_tag,Editors,FALSE
+recorder_pag_components,recorder_pag_components_tag,A2,TAG,components,2.8,1.5,FALSE,.28,.22,.80,.13,7,1,pAG_no_tada,boxB,recorder_pag_components_tag,Components,FALSE
+recorder_pag_concentration,recorder_pag_concentration_tac,A8,TAC,shared_axis,2.9,.60,FALSE,.28,.26,1.3,.13,7,1,none,boxB,recorder_pag_conditions_tac,Concentration,TRUE
+recorder_pag_temperature,recorder_pag_temperature_tac,A8,TAC,shared_axis,2.9,.60,FALSE,.28,.26,1.3,.13,7,1,none,boxB,recorder_pag_conditions_tac,Temperature,TRUE
+recorder_pag_time,recorder_pag_time_tac,A8,TAC,shared_axis,2.9,.60,FALSE,.28,.26,1.3,.13,7,1,none,boxB,recorder_pag_conditions_tac,Time,TRUE
+recorder_variants_250nM,recorder_pag_gfpnb_250nM_tac,A8,TAC,shared_axis,3.7,1.45,FALSE,.28,.22,1.3,.10,7,1,none,boxB,recorder_pag_gfpnb_250nM_tac,Editors,FALSE
+recorder_pag_components,recorder_pag_components_tac,A8,TAC,components,2.8,1.5,FALSE,.28,.22,.80,.13,7,1,pAG_no_tada,boxB,recorder_pag_components_tac,Components,TRUE

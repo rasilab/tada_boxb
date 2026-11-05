@@ -1,0 +1,25 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Fred Hutchinson Cancer Center
+
+The data in this repository are licensed under the Creative Commons Attribution
+4.0 International License. You are free to share and adapt the material for any
+purpose, including commercially, provided you give appropriate credit, link to
+the license, and indicate if changes were made.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary: https://creativecommons.org/licenses/by/4.0/
+
+This license covers source_data/, the annotation CSV files under
+analysis/*/annotations/, the summary tables under analysis/*/tables/, the
+figures under analysis/*/figures/, and the plasmid sequences and accession
+tables under data/. The code is licensed separately under the MIT License; see
+LICENSE.
+
+Two files are excepted. The rendered structure panels
+analysis/boxb_structure_views/figures/boxb_lambdan_structure.* and
+boxb_lambdan_structure_dms_positions.* depict atomic coordinates determined by
+Legault et al. 1998 (doi:10.1016/S0092-8674(00)81579-2) and obtained from that
+paper's authors. The coordinates themselves are not redistributed here and are
+not licensed by us, and no license is granted over them through these renders.
+See analysis/boxb_structure_views/annotations/structure_source.csv.

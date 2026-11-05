@@ -1,0 +1,3 @@
+edit_class,class_order,count_column,percent_column,palette_column,control_color
+≥1,0,sequences with ag substitution,percent_mRNA_edited_A_G,light_colors,#cccccc
+≥2,1,Multiple substitution (A->G),percent_mRNA_multiple_edited_A_G,dark_colors,#888888

@@ -1,0 +1,3 @@
+# TadA-lambdaN only, averaging distinct constructs over all four placements.
+comparison_set,sample_ids,split_distances,width,panel_height
+original,i79_p21,False,2.72,0.84

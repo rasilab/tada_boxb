@@ -1,0 +1,41 @@
+name: Protocol question
+description: Ask about the materials or methods used in this paper
+title: "<Example: Reverse transcriptase used for the reporter libraries>"
+labels: ["protocol"]
+assignees:
+  - rasi
+body:
+  - type: markdown
+    attributes:
+      value: >
+        We are happy to answer questions about the experiments and the analysis. If your question is
+        about how a figure was made, the code and the per-panel data are linked from the
+        [README](https://github.com/rasilab/tada_boxb#readme), and you are welcome to point at a
+        specific file.
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+    validations:
+      required: true
+  - type: input
+    id: institution
+    attributes:
+      label: Institution
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we reach you if we need more information?
+      placeholder: email address, or a link to your contact page
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to ask us?
+    validations:
+      required: true

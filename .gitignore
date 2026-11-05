@@ -1,0 +1,10 @@
+# Reads and count tables are large and are rebuilt by the workflows.
+analysis/*/data/
+.snakemake/
+__pycache__/
+
+# Per-sample intermediates, logs and benchmarks of the published-data reanalysis.
+analysis/published_rabe_contexts/logs/
+analysis/published_rabe_contexts/benchmarks/
+analysis/published_rabe_contexts/tables/samples/
+analysis/published_rabe_contexts/tables/qc/

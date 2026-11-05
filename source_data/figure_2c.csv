@@ -1,0 +1,25 @@
+enzyme,tada_concentration,incubation,condition_variable,condition_level,condition_label,recorder_site,recorder_context,measurement,construct_class,n_constructs,total_edited_umis,total_callable_umis,mean_percent_edited,sem_percent_edited
+TadA–λN,125nM,37_2hr,tada_conc,125nM,125 nM,,,molecules with exactly 1 edit,stem mutant,32,584,21665,2.7299723033817487,0.1661260022479576
+TadA–λN,125nM,37_2hr,tada_conc,125nM,125 nM,,,molecules with exactly 1 edit,wild type,22,2356,22634,10.903739812270846,0.9872154507755961
+TadA–λN,125nM,37_2hr,tada_conc,125nM,125 nM,,,molecules with 2 or more edits,stem mutant,32,104,21665,0.515888319016835,0.05735441760322026
+TadA–λN,125nM,37_2hr,tada_conc,125nM,125 nM,,,molecules with 2 or more edits,wild type,22,925,22634,3.790770547066586,0.4175670471824533
+TadA–λN,250nM,37_2hr,tada_conc,250nM,250 nM,,,molecules with exactly 1 edit,stem mutant,32,1596,22651,7.1141206284271385,0.4379514180407639
+TadA–λN,250nM,37_2hr,tada_conc,250nM,250 nM,,,molecules with exactly 1 edit,wild type,22,3453,22928,15.919387937617834,1.0724185379187694
+TadA–λN,250nM,37_2hr,tada_conc,250nM,250 nM,,,molecules with 2 or more edits,stem mutant,32,425,22651,2.0122875933255466,0.21917953572086762
+TadA–λN,250nM,37_2hr,tada_conc,250nM,250 nM,,,molecules with 2 or more edits,wild type,22,2477,22928,10.726457096345513,1.0284177966191925
+TadA–λN,500nM,37_2hr,tada_conc,500nM,500 nM,,,molecules with exactly 1 edit,stem mutant,32,3621,19418,18.828740548636556,0.5337469918788764
+TadA–λN,500nM,37_2hr,tada_conc,500nM,500 nM,,,molecules with exactly 1 edit,wild type,22,1675,11838,14.087348515824157,0.9074456032600943
+TadA–λN,500nM,37_2hr,tada_conc,500nM,500 nM,,,molecules with 2 or more edits,stem mutant,32,9657,19418,48.42602948003435,1.5915724999715635
+TadA–λN,500nM,37_2hr,tada_conc,500nM,500 nM,,,molecules with 2 or more edits,wild type,22,6648,11838,54.82555290996116,2.115190350913839
+TadA,125nM,37_2hr,tada_conc,125nM,125 nM,,,molecules with exactly 1 edit,stem mutant,32,1482,13887,10.912608194692574,0.5832789796787197
+TadA,125nM,37_2hr,tada_conc,125nM,125 nM,,,molecules with exactly 1 edit,wild type,22,1503,11423,12.400966491098057,0.5769124828137436
+TadA,125nM,37_2hr,tada_conc,125nM,125 nM,,,molecules with 2 or more edits,stem mutant,32,870,13887,6.500042271676751,0.5081138201447777
+TadA,125nM,37_2hr,tada_conc,125nM,125 nM,,,molecules with 2 or more edits,wild type,22,792,11423,6.53595502265179,0.5284163351058672
+TadA,250nM,37_2hr,tada_conc,250nM,250 nM,,,molecules with exactly 1 edit,stem mutant,32,2859,18401,15.56306280934833,0.474946572795966
+TadA,250nM,37_2hr,tada_conc,250nM,250 nM,,,molecules with exactly 1 edit,wild type,22,2394,14373,16.083691570497823,0.5550629175510469
+TadA,250nM,37_2hr,tada_conc,250nM,250 nM,,,molecules with 2 or more edits,stem mutant,32,3487,18401,19.17620752861468,1.335743327161425
+TadA,250nM,37_2hr,tada_conc,250nM,250 nM,,,molecules with 2 or more edits,wild type,22,2862,14373,18.604125855730675,1.32125646293368
+TadA,500nM,37_2hr,tada_conc,500nM,500 nM,,,molecules with exactly 1 edit,stem mutant,32,2239,21702,10.971375421558188,0.4402983266349841
+TadA,500nM,37_2hr,tada_conc,500nM,500 nM,,,molecules with exactly 1 edit,wild type,22,1656,15178,11.672213196322353,0.5168262893578962
+TadA,500nM,37_2hr,tada_conc,500nM,500 nM,,,molecules with 2 or more edits,stem mutant,32,13061,21702,57.70837835813536,1.6989708905755179
+TadA,500nM,37_2hr,tada_conc,500nM,500 nM,,,molecules with 2 or more edits,wild type,22,8471,15178,51.00633526182157,2.7494244408149258

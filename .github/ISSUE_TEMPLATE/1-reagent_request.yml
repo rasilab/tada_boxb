@@ -1,0 +1,89 @@
+name: Reagent request
+description: Request a plasmid or cell line from this paper
+title: "<Example: Requesting the TadA-lambdaN expression plasmid>"
+labels: ["reagent request"]
+assignees:
+  - rasi
+body:
+  - type: markdown
+    attributes:
+      value: >
+        We are happy to share the
+        [plasmids](https://github.com/rasilab/tada_boxb/blob/master/data/plasmid_maps/plasmids.csv)
+        and most of the cell lines made for this paper. We cannot ship the cell line pools carrying
+        integrated reporter libraries, because keeping their diversity needs large-volume culture.
+        Sequences of every plasmid are in
+        [data/plasmid_maps](https://github.com/rasilab/tada_boxb/tree/master/data/plasmid_maps),
+        so you are also welcome to make a construct yourself.
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+    validations:
+      required: true
+  - type: input
+    id: institution
+    attributes:
+      label: Institution
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we reach you if we need more information?
+      placeholder: email address, or a link to your contact page
+    validations:
+      required: true
+  - type: checkboxes
+    id: request-type
+    attributes:
+      label: What are you requesting?
+      description: You may select more than one
+      options:
+        - label: Plasmid(s)
+        - label: Cell line(s)
+  - type: textarea
+    id: reagent-list
+    attributes:
+      label: Reagents requested
+      description: List what you would like us to send.
+      placeholder: |
+        example:
+        - pAS335 (TadA-lambdaN expression plasmid)
+        - pAS441 (TadA-lambdaN landing pad construct)
+    validations:
+      required: true
+  - type: dropdown
+    id: shipping-method
+    attributes:
+      label: Shipping
+      description: How would you like to arrange shipping?
+      options:
+        - Share a FedEx account number below
+        - Send shipping details by email instead
+    validations:
+      required: true
+  - type: input
+    id: shipping-details
+    attributes:
+      label: Shipping details
+      description: >
+        A FedEx account number if you are happy to post it here, or "will send by email" if you
+        would rather not. Anything you write in an issue is public.
+      placeholder: FedEx #123456789, or "will send by email"
+    validations:
+      required: true
+  - type: textarea
+    id: shipping-address
+    attributes:
+      label: Shipping address
+    validations:
+      required: true
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?
+      description: Anything else specific to your request.
+    validations:
+      required: false

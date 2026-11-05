@@ -1,0 +1,16 @@
+experiment_accession,sample_name,study,condition,replicate,condition_order
+SRX17989695,PUM1_rABE_1000ngdox_rep1,lin,PUM1-rABE,1,1
+SRX17989696,PUM1_rABE_1000ngdox_rep2,lin,PUM1-rABE,2,1
+SRX17989697,PUM1_rABE_1000ngdox_rep3,lin,PUM1-rABE,3,1
+SRX17989743,PUM2_rABE_1000ngdox_rep1,lin,PUM2-rABE,1,2
+SRX17989744,PUM2_rABE_1000ngdox_rep2,lin,PUM2-rABE,2,2
+SRX17989745,PUM2_rABE_1000ngdox_rep3,lin,PUM2-rABE,3,2
+SRX21374590,rABE_1000ngdox_rep1,lin,rABE,1,3
+SRX21374591,rABE_1000ngdox_rep2,lin,rABE,2,3
+SRX21374592,rABE_1000ngdox_rep3,lin,rABE,3,3
+SRX21374614,rbFOX2_rABE_1000ngdox_rep1,lin,rbFOX2-rABE,1,4
+SRX21374615,rbFOX2_rABE_1000ngdox_rep2,lin,rbFOX2-rABE,2,4
+SRX21374616,rbFOX2_rABE_1000ngdox_rep3,lin,rbFOX2-rABE,3,4
+SRX17989673,rABE_DMSO_rep1,lin,Uninduced,1,5
+SRX17989674,rABE_DMSO_rep2,lin,Uninduced,2,5
+SRX17989675,rABE_DMSO_rep3,lin,Uninduced,3,5

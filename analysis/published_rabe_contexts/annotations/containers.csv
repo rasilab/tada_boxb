@@ -1,0 +1,3 @@
+tool,uri
+alignment,docker://ghcr.io/rasilab/hisat2_3n:1.0.1
+analysis,docker://ghcr.io/rasilab/r_python:2.4.2

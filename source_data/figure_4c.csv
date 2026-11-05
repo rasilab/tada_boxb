@@ -1,0 +1,9 @@
+enzyme,tada_concentration,incubation,condition_variable,condition_level,condition_label,recorder_site,recorder_context,measurement,construct_class,n_constructs,total_edited_umis,total_callable_umis,mean_percent_edited,sem_percent_edited
+No enzyme,0nM,37_2hr,short_key,pAG_no_tada,No pAG–TadA,A8,UAC,molecules edited at the recorder site,stem mutant,32,10,19437,0.04966532695927057,0.015206793875575256
+No enzyme,0nM,37_2hr,short_key,pAG_no_tada,No pAG–TadA,A8,UAC,molecules edited at the recorder site,wild type,22,105,17843,0.5584493665843168,0.1428962309499704
+pAG–TadA,250nM,37_2hr,short_key,pAG,Complete,A8,UAC,molecules edited at the recorder site,stem mutant,32,1225,11449,10.727212452936778,1.070516382726286
+pAG–TadA,250nM,37_2hr,short_key,pAG,Complete,A8,UAC,molecules edited at the recorder site,wild type,22,2997,8935,32.186054960018154,1.8937499191720684
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_gfpab,No GFPmab,A8,UAC,molecules edited at the recorder site,stem mutant,32,9493,51844,18.1347784263097,1.04153969899848
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_gfpab,No GFPmab,A8,UAC,molecules edited at the recorder site,wild type,22,9190,40678,21.341548365647913,1.244616801603752
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_lambdaN,No λN–GFP,A8,UAC,molecules edited at the recorder site,stem mutant,32,6666,22512,28.130658345034025,2.2415186096374797
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_lambdaN,No λN–GFP,A8,UAC,molecules edited at the recorder site,wild type,22,4606,18521,23.57987057214782,2.2914101001404816

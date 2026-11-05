@@ -1,0 +1,4 @@
+position_id,sites,label,heatmap_source,include_logo,reaction_sets,combine_sites
+A8,A8,A8,,False,250nM;125nM;500nM;editors;time,site
+A2,A2,A2,,False,250nM;125nM;500nM;editors;time,site
+mean_A8_A2,A8;A2,A8/A2 mean,boxb_single_mutant_mean_heatmap,True,250nM;125nM;500nM;editors;time,mean

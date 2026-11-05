@@ -1,0 +1,11 @@
+# One figure per row. The main-figure row draws TadA-lambdaN alone; the supplementary row draws it
+# beside the no-editor library on one shared scale, which is the only way the hundredfold difference
+# between a recruited editor and the background reads off the bars themselves.
+# `fold_labels` names the libraries whose bars carry fold changes and significance stars. The
+# background panel carries none: a ratio between two background rates is not a measurement.
+# `star_offset` holds the fold label, and the stars below it, in points from the top of the taller
+# bar and its error bar. It is negative where tall bars leave the label room against them and
+# positive where a background panel's error bars reach the label instead.
+comparison_set,sample_ids,source,width,height,star_offset,fold_labels
+original,i79_p21,edit_counts_original,1.55,1.24,-3,i79_p21
+original,i79_p21;i79_p23,edit_counts_editor_vs_no_editor_original,2.55,1.40,-3,i79_p21

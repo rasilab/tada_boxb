@@ -1,0 +1,17 @@
+enzyme,tada_concentration,incubation,condition_variable,condition_level,condition_label,recorder_site,recorder_context,measurement,construct_class,n_constructs,total_edited_umis,total_callable_umis,mean_percent_edited,sem_percent_edited
+No enzyme,0nM,37_2hr,short_key,pAG_no_tada,No pAG–TadA,,,molecules with exactly 1 edit,stem mutant,32,33,18132,0.19858774936959617,0.038927237413292966
+No enzyme,0nM,37_2hr,short_key,pAG_no_tada,No pAG–TadA,,,molecules with exactly 1 edit,wild type,22,100,15913,0.66469990418722,0.11851575029067193
+No enzyme,0nM,37_2hr,short_key,pAG_no_tada,No pAG–TadA,,,molecules with 2 or more edits,stem mutant,32,8,18132,0.05316337732018778,0.029816340244521646
+No enzyme,0nM,37_2hr,short_key,pAG_no_tada,No pAG–TadA,,,molecules with 2 or more edits,wild type,22,84,15913,0.4816485397605875,0.12192634290434826
+pAG–TadA,250nM,37_2hr,short_key,pAG,Complete,,,molecules with exactly 1 edit,stem mutant,32,1267,10452,12.180039707560924,0.5450034939581984
+pAG–TadA,250nM,37_2hr,short_key,pAG,Complete,,,molecules with exactly 1 edit,wild type,22,1173,7338,16.065139042363487,0.6954688745540161
+pAG–TadA,250nM,37_2hr,short_key,pAG,Complete,,,molecules with 2 or more edits,stem mutant,32,1076,10452,10.530133244197074,1.0271629274621303
+pAG–TadA,250nM,37_2hr,short_key,pAG,Complete,,,molecules with 2 or more edits,wild type,22,2778,7338,35.968573155271876,2.0496269839262506
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_gfpab,No GFPmab,,,molecules with exactly 1 edit,stem mutant,32,11095,45746,24.12016941492228,0.5298508009489985
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_gfpab,No GFPmab,,,molecules with exactly 1 edit,wild type,22,7301,34085,21.50046598605126,0.5528319776585752
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_gfpab,No GFPmab,,,molecules with 2 or more edits,stem mutant,32,9541,45746,20.68494493719974,1.2151788948493618
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_gfpab,No GFPmab,,,molecules with 2 or more edits,wild type,22,8783,34085,23.892178441022597,1.4734287827992203
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_lambdaN,No λN–GFP,,,molecules with exactly 1 edit,stem mutant,32,2205,19439,11.281339667304122,0.29074349848824654
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_lambdaN,No λN–GFP,,,molecules with exactly 1 edit,wild type,22,1783,15529,11.249225856006452,0.3897283008436697
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_lambdaN,No λN–GFP,,,molecules with 2 or more edits,stem mutant,32,5462,19439,27.243974112049706,2.2014041297622993
+pAG–TadA,250nM,37_2hr,short_key,pAG_no_lambdaN,No λN–GFP,,,molecules with 2 or more edits,wild type,22,3711,15529,22.26411260392439,2.0816899548131764
