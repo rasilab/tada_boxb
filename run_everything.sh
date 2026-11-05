@@ -12,6 +12,8 @@
 # just that target.
 #
 # Counting reads from FASTQ needs a compute allocation and several hours; redrawing takes minutes.
+# Count tables for --plots come from ./data/download_count_tables.sh, raw reads from
+# ./data/download_from_sra.sh.
 #
 # Set SNAKEMAKE to the snakemake executable, SINGULARITY_PREFIX to the directory that caches the
 # container images, and CORES to the number of cores to use.
@@ -34,6 +36,13 @@ PLOTTING=(
     analysis/boxb_in_vivo_sequencing/scripts/plot_figures.smk
     analysis/ln_dms_sequencing/scripts/plot_figures.smk
 )
+# One count table each plotting workflow reads, as a marker that its tables are already here. The
+# Figure 1C workflow has no marker, because its counts are versioned in the repository.
+declare -A COUNT_MARKER=(
+    [analysis/boxb_in_vitro_sequencing/scripts/plot_figures.smk]=analysis/boxb_in_vitro_sequencing/data/summary_stats_combined/i79_p2.csv.gz
+    [analysis/boxb_in_vivo_sequencing/scripts/plot_figures.smk]=analysis/boxb_in_vivo_sequencing/data/recorder_counts/quality/i79_p21.csv.gz
+    [analysis/ln_dms_sequencing/scripts/plot_figures.smk]=analysis/ln_dms_sequencing/data/recorder_counts/i84p1_reads.csv
+)
 
 if [[ ! -f run_everything.sh ]]; then
     printf 'Run this launcher from the repository root.\n' >&2
@@ -41,8 +50,10 @@ if [[ ! -f run_everything.sh ]]; then
 fi
 
 workflows=("${COUNTING[@]}" "${PLOTTING[@]}")
+plots_only=0
 if [[ "${1:-}" == "--plots" ]]; then
     workflows=("${PLOTTING[@]}")
+    plots_only=1
     shift
 fi
 if [[ "${1:-}" == "--only" ]]; then
@@ -56,6 +67,18 @@ if [[ "${1:-}" == "--only" ]]; then
     shift 2
 fi
 extra=("$@")
+
+if [[ $plots_only -eq 1 ]]; then
+    for workflow in "${workflows[@]}"; do
+        marker="${COUNT_MARKER[$workflow]:-}"
+        if [[ -n "$marker" && ! -f "$marker" ]]; then
+            printf '%s reads count tables that are not here, starting with %s.\n' "$workflow" "$marker" >&2
+            printf 'Fetch them with ./data/download_count_tables.sh, or count them from the raw reads\n' >&2
+            printf 'with ./data/download_from_sra.sh and ./run_everything.sh without --plots.\n' >&2
+            exit 1
+        fi
+    done
+fi
 
 for workflow in "${workflows[@]}"; do
     printf '\n=== %s\n' "$workflow"

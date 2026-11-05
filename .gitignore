@@ -8,3 +8,6 @@ analysis/published_rabe_contexts/logs/
 analysis/published_rabe_contexts/benchmarks/
 analysis/published_rabe_contexts/tables/samples/
 analysis/published_rabe_contexts/tables/qc/
+
+# The count table archive, fetched by data/download_count_tables.sh.
+data/count_tables.tar.gz

@@ -92,6 +92,16 @@ are already present. `--only <name>` restricts either to one analysis, and a tra
 one figure. Set `SNAKEMAKE`, `SINGULARITY_PREFIX`, `SINGULARITY_ARGS` and `CORES` to suit your
 machine.
 
+Count tables for `--plots` are attached to the
+[count-tables-v1](https://github.com/rasilab/tada_boxb/releases/tag/count-tables-v1) release,
+fetched by [download_count_tables.sh](./data/download_count_tables.sh):
+
+```bash
+./data/download_count_tables.sh
+```
+
+That is 67 MB, and covers every figure except 1C, whose counts are versioned in the repository.
+
 Raw reads come from the BioProject, fetched by
 [download_from_sra.sh](./data/download_from_sra.sh):
 
