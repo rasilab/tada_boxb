@@ -76,8 +76,8 @@ Rachael A. Bakker, Oliver B. Nicholson, Heungwon Park, Yu-Lan Xiao, Weixin Tang,
 
 ## Reproduce
 
-The analyses are Snakemake workflows that run in Singularity containers, launched by
-[run_everything.sh](./run_everything.sh) from the repository root:
+Everything runs from the repository root through [run_everything.sh](./run_everything.sh), which
+launches each analysis as a Snakemake workflow:
 
 ```bash
 ./run_everything.sh
@@ -88,9 +88,62 @@ The analyses are Snakemake workflows that run in Singularity containers, launche
 ```
 
 The first command counts reads and then redraws; the second redraws figures from count tables that
-are already present. `--only <name>` restricts either to one analysis, and a trailing rule name runs
-one figure. Set `SNAKEMAKE`, `SINGULARITY_PREFIX`, `SINGULARITY_ARGS` and `CORES` to suit your
-machine.
+are already present. `--only <name>` restricts either to one analysis, `--singularity` runs every
+step in a container, and a trailing rule name runs one figure. The options may be given in any
+order, and anything after them is passed through to Snakemake.
+
+### What has to be installed
+
+Snakemake, and a Python environment holding pandas, numpy, matplotlib, scipy and biopython. By
+default every step runs with whatever is on PATH, so nothing further is needed on an ordinary
+machine. The published figures were produced under Snakemake 7.0.0 with Python 3.12.8, pandas 2.3.1,
+numpy 1.26.4, matplotlib 3.10.3, scipy 1.16.0 and biopython 1.85.
+
+Adding `--singularity` instead runs each step inside the container its workflow declares, so that
+the versions above are fixed for you:
+
+```bash
+./run_everything.sh --singularity
+```
+
+Snakemake then pulls each `docker://` image once into the directory named by `SINGULARITY_PREFIX`
+and reuses it from then on, so the first run of an analysis spends a few extra minutes building
+images. Apptainer works in place of Singularity.
+
+| Container | Used by |
+| --- | --- |
+| [`r_python:2.4.2`](https://github.com/orgs/rasilab/packages/container/package/r_python) | every workflow, apart from the two below |
+| [`python:1.0.0`](https://github.com/orgs/rasilab/packages/container/package/python) | the in vitro read counter |
+| [`hisat2_3n:1.0.1`](https://github.com/orgs/rasilab/packages/container/package/hisat2_3n) | the published-data reanalysis behind Supplementary Figure 3B |
+| [`sratools:3.0.8`](https://github.com/orgs/rasilab/packages/container/package/sratools) | [download_from_sra.sh](./data/download_from_sra.sh), which runs `fasterq-dump` inside it |
+
+Every analysis behind the main figures needs nothing but Python. The published-data reanalysis
+behind Supplementary Figure 3B is the exception, because it runs HISAT-3N and samtools: give it
+`--singularity`, or put those programs on PATH. The launcher checks for them and says which is
+missing before starting anything.
+
+Both scripts read the same settings from the environment, and each one has a working default:
+
+| Variable | Read by | Default | Meaning |
+| --- | --- | --- | --- |
+| `SNAKEMAKE` | [run_everything.sh](./run_everything.sh) | `snakemake` | the Snakemake executable |
+| `CORES` | [run_everything.sh](./run_everything.sh) | `4` | cores the workflows may use |
+| `THREADS` | [download_from_sra.sh](./data/download_from_sra.sh) | `4` | threads each download may use |
+| `SINGULARITY_PREFIX` | both scripts, with `--singularity` | `.singularity` | directory that caches the container images |
+| `SINGULARITY_ARGS` | both scripts, with `--singularity` | none | arguments passed through to Singularity, for whatever bind mounts the machine needs |
+| `SINGULARITY` | [download_from_sra.sh](./data/download_from_sra.sh), with `--singularity` | `singularity` | set this to `apptainer` instead where that is what is installed |
+
+On a cluster, containers avoid installing anything: bind the filesystem that holds the data, and
+point the image cache at shared storage so that the images are built once for everyone.
+
+```bash
+export SINGULARITY_PREFIX=/path/to/shared/singularity
+export SINGULARITY_ARGS="-B /fh"
+export CORES=12
+./run_everything.sh --singularity
+```
+
+### Count tables, to redraw the figures
 
 Count tables for `--plots` are attached to the
 [count-tables-v1](https://github.com/rasilab/tada_boxb/releases/tag/count-tables-v1) release,
@@ -100,7 +153,10 @@ fetched by [download_count_tables.sh](./data/download_count_tables.sh):
 ./data/download_count_tables.sh
 ```
 
-That is 67 MB, and covers every figure except 1C, whose counts are versioned in the repository.
+That is a 67 MB download, and covers every figure except 1C, whose counts are versioned in the
+repository. Redrawing from the tables takes minutes.
+
+### Raw reads, to count from scratch
 
 Raw reads come from the BioProject, fetched by
 [download_from_sra.sh](./data/download_from_sra.sh):
@@ -109,16 +165,24 @@ Raw reads come from the BioProject, fetched by
 ./data/download_from_sra.sh
 ```
 
-This fetches each run by accession and names the files as the workflows expect. Counting from FASTQ
-needs a compute allocation and several hours, and writes about 130 GB into the ignored data
-directory of each analysis folder; redrawing takes minutes.
+This fetches each run by accession and names the files as the workflows expect. Naming sample
+identifiers from the `sample_id` column of [sra_accessions.csv](./data/sra_accessions.csv) fetches
+only those runs. It calls `fasterq-dump` from PATH, which conda installs with
+`conda install -c bioconda sra-tools`; `--singularity` runs it inside the container instead, so that
+nothing has to be installed for it either.
 
-Containers are
-[`ghcr.io/rasilab/r_python:2.4.2`](https://github.com/orgs/rasilab/packages/container/package/r_python)
-throughout, except the in vitro read counter, which uses
-[`ghcr.io/rasilab/python:1.0.0`](https://github.com/orgs/rasilab/packages/container/package/python),
-and the published-data reanalysis, which uses
-[`ghcr.io/rasilab/hisat2_3n:1.0.1`](https://github.com/orgs/rasilab/packages/container/package/hisat2_3n).
+Counting from the reads needs a compute allocation, and far more disk than it downloads:
+
+- The 25 runs are a 6.4 GB download, 20.9 billion bases in all.
+- They unpack to 95 GB of FASTQ, because the counting workflows read uncompressed reads. Only the
+  λN DMS mRNA run stays gzipped.
+- Counting writes per-barcode intermediates on top of that, leaving 167 GB in the ignored data
+  directory of each analysis folder, 156 GB of it under the in vitro analysis.
+- A complete run of the four analyses behind Figures 1C and 2 to 6 took 1 hour 55 minutes on 12
+  cores, divided about evenly between downloading and counting, and never passed 2 GB of memory.
+
+The published-data reanalysis behind Supplementary Figure 3B is separate, and much heavier: building
+the HISAT-3N index for GRCh38 alone asks for 300 GB of memory and 16 cores.
 
 ## Layout
 
