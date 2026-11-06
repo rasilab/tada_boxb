@@ -1,6 +1,2 @@
-# Compare direct site editing percentages between two recorder sites in the original TadA-lambdaN library.
-# Site identifiers resolve through boxb_substitution_measurements.csv. `variant_set` names the sequences a
-# panel draws: `single` the 57 single substitutions, `designed` every mutant the combinatorial library
-# designs, singles included. Wild type is drawn in neither.
 source,comparison_set,sample_id,x_position_id,y_position_id,variant_set
 all_variant_sites_original,original,i79_p21,A8,A2,designed

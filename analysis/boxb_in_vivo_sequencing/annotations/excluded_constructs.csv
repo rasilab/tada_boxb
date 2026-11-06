@@ -1,4 +1,1 @@
-# Constructs excluded from the in vivo analysis, established from these libraries rather than copied
-# from the in vitro exclusion list. Every figure reports its results with and without them.
-# An empty file means nothing is excluded.
 layout,variable_subpos,g_depleted,reason,source

@@ -26,19 +26,6 @@ FLANK_LENGTH = 10
 COMPLEMENT = str.maketrans("ACGTN", "TGCAN")
 EXPECTED_OLIGOS = 32
 LAYOUT_PATTERN = r"^(spacer([35])_(\d+))"
-HEADER_COMMENT = """# Derived from annotations/oligo_design.csv by scripts/derive_barcode_annotations.py.
-# Do not edit by hand: rerun the deriving script instead.
-# Coordinates are zero-based and relative to the first base of the construct barcode in read 1.
-# `variable_start` is the randomized window, `target_start` the measured 17-base recorder,
-# `boxb_start` the 19-base boxB region, and `handle_start` the first base of the reverse primer,
-# which sits one base past the end of the amplicon.
-# `target_dist` counts the designed spacer bases between boxB and the recorder, after the invariant
-# base that always sits beside boxB (`boxb_adjacent_base`), and matches the in vitro annotation of the
-# same constructs. `designed_spacer_label` is the number in the oligo name, which states that distance
-# only for the 5′ placements.
-# `upstream_seq` and `downstream_seq` are ten-base flank patterns, with a wildcard wherever a
-# randomized base falls inside the flank.
-"""
 
 
 def require(condition, message):
@@ -167,7 +154,7 @@ if __name__ == "__main__":
     derived = derive()
     check_against_in_vitro(derived)
     if "--dry-run" not in sys.argv:
-        with open(OUTPUT, "w") as handle:
-            handle.write(HEADER_COMMENT)
-            derived.to_csv(handle, index=False)
+        # No header comment: the columns are documented in annotations/README.md, so that GitHub
+        # renders the file as a table.
+        derived.to_csv(OUTPUT, index=False)
         print(f"\nWrote {len(derived)} constructs to {OUTPUT}")

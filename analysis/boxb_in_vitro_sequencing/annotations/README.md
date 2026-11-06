@@ -1,4 +1,5 @@
-What the columns of the annotation files in this directory mean.
+What the columns of the annotation files in this directory mean. These files carry no in-file
+comments, so that GitHub renders them as tables.
 
 ### sample_annotations.csv
 
@@ -39,8 +40,7 @@ measurement: recorder measurement both axes carry, as `selected_measurement` res
 
 ### boxb_hairpin_site_figures.csv
 
-The reactions the per-adenosine boxB figure draws, one row per panel. These files carry no in-file
-comments, since the annotation loader reads them as plain CSV.
+The reactions the per-adenosine boxB figure draws, one row per panel.
 
 figure: registered source name of the figure this panel belongs to, matching `source` in figure_outputs.csv
 enzyme: the editor whose palette name and colour this panel carries, `none` for the shared control panel

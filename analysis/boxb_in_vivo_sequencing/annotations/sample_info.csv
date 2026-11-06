@@ -1,11 +1,3 @@
-# Experimental metadata for the three in vivo boxB RNA libraries. Sequencing metadata is in
-# sample_annotations.csv; the two are joined on sample_id.
-#
-# Each row is one sequenced library prepared from one dish of cells, so summaries describe
-# construct variation rather than biological replication.
-# `enzyme` is the key every figure selects on; `enzyme_label` is its presentation name.
-# `recruitment` says whether the editor was targeted to boxB.
-# Panel order is a figure choice and lives in sample_comparisons.csv, not here.
 sample_id,sample_name,batch,enzyme,enzyme_label,recruitment,plasmid,cell_line,induction_hours,rna_selection,rt_enzyme,rt_primer,pcr_cycles,library_id
 i79_p21,invivo_tadaln,original,tada_ln,TadA–λN,boxb_targeted,,HEK293T,72,total RNA,Maxima H Minus,oRB213,14,i79p21
 i79_p22,invivo_gfpnb,original,tada_gfpnb,TadA-GFPNb,boxb_targeted,,HEK293T,72,total RNA,Maxima H Minus,oRB213,14,i79p22

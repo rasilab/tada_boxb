@@ -1,7 +1,3 @@
-# Every figure this analysis writes, registered under its PDF filename. Each figure is also written
-# as a 96-DPI PNG of the same stem. `source` is the name the drawing script passes to save_figure,
-# and no source or filename may repeat. `comparison_set` names the libraries a figure draws, and
-# `position_id` the recorder site a family measures at.
 analysis,source,comparison_set,position_id,filename
 plot_recorder_edit_counts,edit_counts_original,original,,recorder_edit_counts_editors_original.pdf
 plot_recorder_edit_counts,edit_counts_editor_vs_no_editor_original,original,,recorder_edit_counts_tada_lambdaN_vs_no_editor_original.pdf

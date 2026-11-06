@@ -1,7 +1,3 @@
-# The libraries each figure family draws, grouped into the comparisons that may be put side by side.
-# `role` says what a library contributes: `editor` is a boxB-targeted editor and `background` is the
-# no-editor library. Figure selections name their libraries explicitly.
-# `panel_order` fixes the left-to-right or top-to-bottom order within the comparison.
 comparison_set,scale_group,sample_id,role,panel_order
 original,original,i79_p21,editor,0
 original,original,i79_p22,editor,1

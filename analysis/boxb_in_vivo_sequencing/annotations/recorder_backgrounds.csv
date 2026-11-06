@@ -1,7 +1,3 @@
-# The two fixed recorder cassettes of the in vivo boxB library, in read (antisense) orientation.
-# `recorder_read_sequence` is the measured 17-mer. `boxb_adjacent_base` is the invariant base that
-# always separates boxB from the designed spacer, so the declared placement distance counts the
-# designed bases between boxB and the recorder after it.
 g_depleted,recorder_read_sequence,boxb_adjacent_base,sequence_source
 no,ATTATGGTGTAATTCTA,A,analysis/boxb_in_vivo_sequencing/annotations/oligo_design.csv
 yes,ATTATGGTGTAATTGTA,A,analysis/boxb_in_vivo_sequencing/annotations/oligo_design.csv

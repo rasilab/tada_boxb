@@ -1,6 +1,3 @@
-# Each manuscript panel whose plotted values are exported to the repository-root source_data/
-# directory, and the registered figure it is drawn from. `source` and `filename` must name a row of
-# figure_outputs.csv, so a panel cannot be exported from a figure this analysis does not register.
 panel,source,filename
 figure_5b,read_coverage_original,boxb_read_coverage_tada_lambdaN_original.pdf
 figure_5c,edit_counts_original,recorder_edit_counts_editors_original.pdf

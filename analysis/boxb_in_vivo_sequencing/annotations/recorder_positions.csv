@@ -1,8 +1,3 @@
-# The eight measured recorder adenosines. `read_index` is the zero-based offset inside the 17-base
-# recorder read sequence; `editing_column` is the counter column that holds its edited molecules.
-# `context` is the sense-strand trinucleotide in the standard background only: the G-depleted
-# background changes sense position 3 and therefore A2's context, which the helper derives per
-# background rather than reading from this file.
 position_id,read_index,editing_column,context
 A16,1,pos_0_C,AAU
 A15,2,pos_1_C,UAA

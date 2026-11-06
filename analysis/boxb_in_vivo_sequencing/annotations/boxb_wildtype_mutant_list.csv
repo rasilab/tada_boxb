@@ -1,7 +1,3 @@
-# The predefined stem-disrupting boxB mutants and their matched wild-type inserts, taken unchanged from
-# the in vitro analysis so the two experiments test the same sequences. A row's `insert` is in read
-# (antisense) orientation. These are stem-disrupting mutants, never a boxB deletion or no-boxB control.
-# Source: analysis/boxb_in_vitro_sequencing/annotations/boxb_wildtype_mutant_list.csv
 variable_subpos,mutant_bases,insert_type,insert
 1_3,,wt,CCC
 4_6,GGG,wt,GGG

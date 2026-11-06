@@ -1,6 +1,2 @@
-# Joint recorder events the counter tabulates directly, rather than as a product of marginals.
-# `sites` names the recorder positions, most 5′ first; the counter writes the full four-state table
-# over the molecules callable at every named site, so a joint estimate and each marginal can be
-# compared on exactly one set of molecules.
 position_id,sites,label
 A8_A2,A8;A2,both A8 and A2
